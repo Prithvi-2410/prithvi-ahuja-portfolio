@@ -119,28 +119,6 @@ export const projectsData = [
       results: "Delivered a lightweight, highly responsive weather web dashboard deployed on Vercel."
     }
   },
-  {
-    id: "06",
-    title: "Android Smart Travel Assistant",
-    category: "ANDROID / APPLICATION",
-    shortDescription: "An Android travel assistant concept combining maps, location services, Firebase and travel-focused utilities.",
-    technologies: ["Java", "XML", "Firebase", "Google Maps SDK", "Room DB"],
-    visualType: "travel_assistant",
-    githubUrl: "https://github.com/prithvi-2410",
-    liveUrl: null,
-    figmaUrl: null,
-    primaryUrl: "https://github.com/prithvi-2410",
-    details: {
-      problem: "Travelers frequently experience connectivity dropouts and must switch between separate apps for itineraries, route maps, and offline notes.",
-      whatIBuilt: "Created a native Android smart travel assistant using Room Database for reliable offline data access and Google Maps SDK for custom route guidance.",
-      keyFeatures: [
-        "Google Maps SDK integration with custom pin clustering",
-        "Offline-first itinerary planner backed by Room DB",
-        "Firebase authentication & cloud sync for trip notes",
-        "Interactive travel packing list & emergency contacts"
-      ],
-      challenges: "Optimizing map marker memory usage and handling Room DB async thread queries smoothly on Android UI looper threads.",
-      results: "Built a mobile application concept tailored for seamless travel planning."
-    }
-  }
+ 
+  
 ];

@@ -44,10 +44,10 @@ export const experienceData = [
   {
     period: "2024 — Present",
     role: "Technical & Frontend Member",
-    organization: "Codebreakers Club",
+    organization: "Cyber Club",
     location: "Shri Ramdeobaba College of Engineering and Management",
     type: "Community & Leadership",
-    tag: "Club Lead",
+    tag: "Club Member",
     description: "Engaged in developing web interfaces, organizing technical workshops, and mentoring peers in web development fundamentals and UI design.",
     highlights: [
       "Designed and coded responsive club web assets",

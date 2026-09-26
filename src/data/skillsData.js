@@ -5,7 +5,7 @@ export const skillsData = [
       { name: "Python", level: 90, desc: "Scripting, AI/ML, OpenCV, Data Processing" },
       { name: "Java (OOP)", level: 85, desc: "Data Structures, Android Dev, Core CS" },
       { name: "JavaScript", level: 88, desc: "ES6+, Async, DOM, Modern Web Logic" },
-      { name: "C", level: 80, desc: "Low-level Concepts, Algorithms, Pointers" },
+      
     ]
   },
   {
@@ -25,7 +25,7 @@ export const skillsData = [
       { name: "HTML5 / CSS3", level: 92, desc: "Semantic Markup, Responsive Layouts" },
       { name: "Tailwind CSS", level: 90, desc: "Utility-first Styling, Custom Design Systems" },
       { name: "FastAPI", level: 82, desc: "Async Python Endpoints, REST APIs" },
-      { name: "PHP", level: 75, desc: "Backend Scripting, CRUD Workflows" },
+      
     ]
   },
   {
