@@ -266,42 +266,131 @@ export default function ProjectVisual({ visualType }) {
         </div>
       );
 
-    // 6. Android Travel Assistant Visual
-    case 'travel_assistant':
-      return (
-        <div className="w-full h-full min-h-[300px] bg-[#0D131F] border border-amber-500/30 rounded-2xl p-4 flex flex-col justify-between relative overflow-hidden text-slate-200 select-none">
-          {/* Header */}
-          <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-            <div className="flex items-center gap-2">
-              <Navigation className="w-4 h-4 text-amber-400" />
-              <span className="text-xs font-bold text-white">SMART TRAVEL ASSISTANT</span>
-            </div>
-            <span className="text-[10px] font-mono text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded">ANDROID / ROOM</span>
-          </div>
+   // 6. Incredible India Travel Visual
+case 'travel':
+  return (
+    <div className="w-full h-full min-h-[300px] rounded-2xl overflow-hidden relative bg-[#0B1220] border border-orange-400/30 select-none">
 
-          {/* Map & Itinerary Preview */}
-          <div className="my-3 rounded-xl bg-slate-900 border border-slate-800 p-3 flex flex-col gap-2 relative">
-            <div className="flex items-center justify-between text-[11px] font-bold text-white">
-              <span className="flex items-center gap-1.5 text-amber-400">
-                <Compass className="w-3.5 h-3.5" /> Route Map
-              </span>
-              <span className="text-[9px] font-mono text-slate-400">Offline Room DB</span>
-            </div>
-            
-            <div className="h-20 bg-slate-950 rounded-lg border border-slate-800 relative overflow-hidden flex items-center justify-center">
-              <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] [background-size:12px_12px]" />
-              <div className="z-10 flex items-center gap-2 text-xs font-mono text-amber-300">
-                <MapPin className="w-4 h-4 text-rose-500 animate-bounce" />
-                <span>Nagpur → Taj Mahal → Jaipur</span>
-              </div>
-            </div>
-          </div>
+      {/* Real India travel image */}
+      <img
+        src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1400&q=90"
+        alt="India travel destination"
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
+      />
 
-          <div className="text-[10px] font-mono text-slate-400 text-center">
-            [ Native Java • Firebase Sync • Offline Maps ]
-          </div>
+      {/* Cinematic overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#050810] via-[#07101f]/45 to-transparent" />
+
+      {/* Moving atmospheric glow */}
+      <motion.div
+        animate={{
+          x: [-30, 40, -30],
+          y: [20, -20, 20],
+          opacity: [0.25, 0.5, 0.25]
+        }}
+        transition={{
+          duration: 7,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+        className="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-orange-400/30 blur-3xl"
+      />
+
+      {/* Top navigation-style HUD */}
+      <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
+
+        <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/35 border border-white/20 backdrop-blur-md">
+          <MapPin className="w-3.5 h-3.5 text-orange-300" />
+
+          <span className="text-[10px] font-mono font-bold tracking-wider text-white">
+            INDIA
+          </span>
         </div>
-      );
+
+        <div className="px-2.5 py-1 rounded bg-black/35 border border-white/15 backdrop-blur-md">
+          <span className="text-[9px] font-mono text-orange-300">
+            TRAVEL DISCOVERY
+          </span>
+        </div>
+
+      </div>
+
+      {/* Floating destination marker */}
+      <motion.div
+        animate={{
+          y: [0, -8, 0]
+        }}
+        transition={{
+          duration: 3,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+        className="absolute top-[42%] left-[48%]"
+      >
+        <div className="relative">
+
+          <div className="absolute inset-0 w-8 h-8 rounded-full bg-orange-400/30 animate-ping" />
+
+          <div className="relative w-8 h-8 rounded-full bg-orange-500/90 border-2 border-white/80 flex items-center justify-center shadow-[0_0_25px_rgba(251,146,60,0.7)]">
+            <MapPin className="w-4 h-4 text-white fill-white" />
+          </div>
+
+        </div>
+      </motion.div>
+
+      {/* Bottom destination information */}
+      <div className="absolute bottom-0 left-0 right-0 p-5">
+
+        <div className="flex items-center gap-2 mb-2">
+          <span className="w-6 h-px bg-orange-400" />
+
+          <span className="text-[9px] font-mono tracking-[0.2em] text-orange-300">
+            INCREDIBLE INDIA
+          </span>
+        </div>
+
+        <h3 className="text-2xl font-bold text-white tracking-tight">
+          Explore India
+        </h3>
+
+        <p className="text-xs text-white/70 mt-1 max-w-[280px]">
+          Discover destinations, culture, heritage and unforgettable experiences.
+        </p>
+
+        {/* Bottom stats */}
+        <div className="flex items-center gap-2 mt-4">
+
+          <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-black/35 border border-white/15 backdrop-blur-md">
+            <Compass className="w-3 h-3 text-orange-300" />
+            <span className="text-[9px] font-mono text-white/80">
+              DESTINATIONS
+            </span>
+          </div>
+
+          <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-black/35 border border-white/15 backdrop-blur-md">
+            <Sparkles className="w-3 h-3 text-orange-300" />
+            <span className="text-[9px] font-mono text-white/80">
+              EXPERIENCES
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Subtle animated scan line */}
+      <motion.div
+        animate={{ y: ["-100%", "500%"] }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+        className="absolute left-0 right-0 h-px bg-orange-300/20 pointer-events-none"
+      />
+
+    </div>
+  );
 
     default:
       return null;
