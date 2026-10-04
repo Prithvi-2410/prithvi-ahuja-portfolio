@@ -119,6 +119,49 @@ export const projectsData = [
       results: "Delivered a lightweight, highly responsive weather web dashboard deployed on Vercel."
     }
   },
- 
+ {
+  id: "06",
+  title: "Incredible-India",
+  category: "API / WEB APPLICATION",
+  shortDescription:
+    "An immersive India travel discovery platform featuring interactive destinations, tourist attractions, dynamic visual storytelling and an AI-powered travel assistant.",
+  technologies: [
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "REST APIs",
+    "Python",
+    "AI"
+  ],
+  visualType: "travel",
+  githubUrl: "https://github.com/prithvi-2410",
+  liveUrl: "https://incredibleindia-alpha.vercel.app/",
+  figmaUrl: null,
+  primaryUrl: "https://incredibleindia-alpha.vercel.app/",
+  details: {
+    problem:
+      "Travel information about India is often scattered across multiple platforms, making it difficult for users to discover destinations, attractions and travel experiences through one engaging experience.",
+
+    whatIBuilt:
+      "Built an immersive Incredible India tourism web experience that combines destination discovery, attraction exploration, animated storytelling, rich visual content and an AI-powered travel assistant into a single responsive platform.",
+
+    keyFeatures: [
+      "Interactive exploration of Indian cities and destinations",
+      "Destination and tourist attraction discovery",
+      "Image-rich destination cards and visual storytelling",
+      "Dynamic animations and interactive travel sections",
+      "AI-powered chatbot for travel recommendations and itinerary assistance",
+      "Responsive experience across desktop and mobile devices",
+      "API-driven travel content and destination information",
+      "Immersive India-focused tourism interface"
+    ],
+
+    challenges:
+      "Organizing a large amount of destination and attraction information while maintaining a visually rich interface with smooth animations, responsive layouts and an intuitive travel-discovery experience.",
+
+    results:
+      "Delivered a responsive and immersive India tourism platform that brings destination discovery, visual storytelling and AI-assisted travel planning together in one interactive experience."
+  }
+},
   
 ];
